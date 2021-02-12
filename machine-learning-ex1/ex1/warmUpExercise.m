@@ -1,25 +1,16 @@
-function plotData(x, y)
-%PLOTDATA Plots the data points x and y into a new figure 
-%   PLOTDATA(x,y) plots the data points and gives the figure axes labels of
-%   population and profit.
-figure; % open a new figure window
-data = load('machine-learning-ex1/machine-learning-ex1/ex1/ex1data1.txt');
-x = data(:,1) ; y = data(:,2);
-m = length(y)
+function A = warmUpExercise()
+%WARMUPEXERCISE Example function in octave
+%   A = WARMUPEXERCISE() is an example function that returns the 5x5 identity matrix
 
-plot(x, y, 'rx', 'MarkerSize', 10); % Plot the data
-ylabel('Profit in $10,000s'); % Set the y−axis label
-xlabel('Population of City in 10,000s'); % Set the x−axis label
+A = eye(5);
+% ============= YOUR CODE HERE ==============
+% Instructions: Return the 5x5 identity matrix 
+%               In octave, we return values by defining which variables
+%               represent the return values (at the top of the file)
+%               and then set them accordingly. 
 
-% ====================== YOUR CODE HERE ======================
-% Instructions: Plot the training data into a figure using the 
-%               "figure" and "plot" commands. Set the axes labels using
-%               the "xlabel" and "ylabel" commands. Assume the 
-%               population and revenue data have been passed in
-%               as the x and y arguments of this function.
-%
-% Hint: You can use the 'rx' option with plot to have the markers
-%       appear as red crosses. Furthermore, you can make the
-%       markers larger by using plot(..., 'rx', 'MarkerSize', 10);
-% ============================================================
+
+% ===========================================
+
+
 end
